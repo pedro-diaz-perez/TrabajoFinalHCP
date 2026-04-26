@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Viaje del Descubrimiento - Cómic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #fffbeb; /* amber-50 */
+      }
+
+      .neo-shadow {
+        shadow: 8px 8px 0px 0px rgba(17, 24, 39, 1);
+        box-shadow: 8px 8px 0px 0px rgba(17, 24, 39, 1);
+      }
+
+      .panel-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 12px 12px 0px 0px rgba(17, 24, 39, 1);
+      }
+
+      .speech-bubble-triangle {
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #111827;
+      }
+
+      .speech-bubble-triangle-inner {
+        position: absolute;
+        top: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #f3f4f6;
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8 text-gray-800">
+    <div class="max-w-6xl mx-auto">
+      <!-- Cabecera -->
+      <header class="mb-10 text-center">
+        <h1
+          class="text-4xl md:text-5xl font-black tracking-tight uppercase mb-2 italic"
+        >
+          El Viaje del Descubrimiento
+        </h1>
+        <p
+          class="text-xl md:text-2xl font-bold text-gray-600 uppercase tracking-widest"
+        >
+          Una historia en 7 viñetas
+        </p>
+      </header>
+
+      <!-- Rejilla de Viñetas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Etapa 1 -->
+        <div
+          class="panel-card relative flex flex-col items-center text-center p-8 border-4 border-gray-900 rounded-2xl bg-white neo-shadow transition-all duration-300"
+        >
+          <div
+            class="absolute -top-4 -left-4 w-10 h-10 bg-yellow-400 border-4 border-gray-900 rounded-full flex items-center justify-center font-black text-xl z-10"
+          >
+            1
+          </div>
+          <div
+            class="w-32 h-32 rounded-full border-4 border-gray-900 flex items-center justify-center mb-6 bg-blue-100 shadow-[4px_4px_0px_0px_rgba(17,24,39,1)]"
+          >
+            <div class="relative">
+              <i data-lucide="user" class="w-16 h-16 text-gray-800"></i>
+              <i
+                data-lucide="help-circle"
+                class="w-8 h-8 text-red-500 absolute -top-4 -right-4 animate-bounce"
+              ></i>
+            </div>
+          </div>
+          <h2 class="text-2xl font-black uppercase mb-1">Las Dudas</h2>
+          <h3
+            class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4"
+          >
+            La inquietud inicial
+          </h3>
+          <div
+            class="relative bg-gray-100 border-2 border-gray-900 rounded-xl p-4 mt-auto"
+          >
+            <div class="speech-bubble-triangle"></div>
+            <div class="speech-bubble-triangle-inner"></div>
+            <div class="flex flex-col items-center">
+              <img
+                src="eaac11e9-ef7b-4699-83eb-52ae142de674.jpg"
+                alt="Dónde estoy"
+                class="w-40 h-40 object-cover rounded-lg mb-2 border-2 border-gray-400"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Etapa 2 -->
+        <div
+          class="panel-card relative flex flex-col items-center text-center p-8 border-4 border-gray-900 rounded-2xl bg-white neo-shadow transition-all duration-300"
+        >
+          <div
+            class="absolute -top-4 -left-4 w-10 h-10 bg-yellow-400 border-4 border-gray-900 rounded-full flex items-center justify-center font-black text-xl z-10"
+          >
+            2
+          </div>
+          <div
+            class="w-32 h-32 rounded-full border-4 border-gray-900 flex items-center justify-center mb-6 bg-orange-100 shadow-[4px_4px_0px_0px_rgba(17,24,39,1)]"
+          >
+            <i
+              data-lucide="zap"
+              class="w-16 h-16 text-yellow-500 fill-yellow-200"
+            ></i>
+          </div>
+          <h2 class="text-2xl font-black uppercase mb-1">Proactividad</h2>
+          <h3
+            class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4"
+          >
+            Tomar las riendas
+          </h3>
+          <div
+            class="relative bg-gray-100 border-2 border-gray-900 rounded-xl p-4 mt-auto"
+          >
+            <div class="speech-bubble-triangle"></div>
+            <div class="speech-bubble-triangle-inner"></div>
+            <p class="font-medium text-gray-700 italic">
+              "Dejo de esperar a que las cosas pasen. Levanto la mirada, observo
+              mi entorno y decido actuar."
+            </p>
+          </div>
+        </div>
+
+        <!-- Etapa 3 -->
+        <div
+          class="panel-card relative flex flex-col items-center text-center p-8 border-4 border-gray-900 rounded-2xl bg-white neo-shadow transition-all duration-300"
+        >
+          <div
+            class="absolute -top-4 -left-4 w-10 h-10 bg-yellow-400 border-4 border-gray-900 rounded-full flex items-center justify-center font-black text-xl z-10"
+          >
+            3
+          </div>
+          <div
+            class="w-32 h-32 rounded-full border-4 border-gray-900 flex items-center justify-center mb-6 bg-purple-100 shadow-[4px_4px_0px_0px_rgba(17,24,39,1)]"
+          >
+            <i data-lucide="layout-grid" class="w-16 h-16 text-purple-600"></i>
+          </div>
+          <h2 class="text-2xl font-black uppercase mb-1">Análisis DAFO</h2>
+          <h3
+            class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4"
+          >
+            Conocimiento personal
+          </h3>
+          <div
+            class="relative bg-gray-100 border-2 border-gray-900 rounded-xl p-4 mt-auto"
+          >
+            <div class="speech-bubble-triangle"></div>
+            <div class="speech-bubble-triangle-inner"></div>
+            <p class="font-medium text-gray-700 italic">
+              "Hago un mapa de mi interior y exterior: Debilidades, Amenazas,
+              Fortalezas y Oportunidades."
+            </p>
+          </div>
+        </div>
+
+        <!-- Etapa 4 -->
+        <div
+          class="panel-card relative flex flex-col items-center text-center p-8 border-4 border-gray-900 rounded-2xl bg-white neo-shadow transition-all duration-300"
+        >
+          <div
+            class="absolute -top-4 -left-4 w-10 h-10 bg-yellow-400 border-4 border-gray-900 rounded-full flex items-center justify-center font-black text-xl z-10"
+          >
+            4
+          </div>
+          <div
+            class="w-32 h-32 rounded-full border-4 border-gray-900 flex items-center justify-center mb-6 bg-teal-100 shadow-[4px_4px_0px_0px_rgba(17,24,39,1)]"
+          >
+            <div class="relative">
+              <i data-lucide="users" class="w-16 h-16 text-teal-700"></i>
+              <i
+                data-lucide="message-circle"
+                class="w-8 h-8 text-teal-500 absolute -top-4 -right-4 fill-white"
+              ></i>
+            </div>
+          </div>
+          <h2 class="text-2xl font-black uppercase mb-1">El Espejo</h2>
+          <h3
+            class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4"
+          >
+            Mediante los demás
+          </h3>
+          <div
+            class="relative bg-gray-100 border-2 border-gray-900 rounded-xl p-4 mt-auto"
+          >
+            <div class="speech-bubble-triangle"></div>
+            <div class="speech-bubble-triangle-inner"></div>
+            <p class="font-medium text-gray-700 italic">
+              "Escucho activamente. ¿Cómo me percibe mi entorno? Su feedback me
+              ayuda a crecer."
+            </p>
+          </div>
+        </div>
+
+        <!-- Etapa 5 -->
+        <div
+          class="panel-card relative flex flex-col items-center text-center p-8 border-4 border-gray-900 rounded-2xl bg-white neo-shadow transition-all duration-300"
+        >
+          <div
+            class="absolute -top-4 -left-4 w-10 h-10 bg-yellow-400 border-4 border-gray-900 rounded-full flex items-center justify-center font-black text-xl z-10"
+          >
+            5
+          </div>
+          <div
+            class="w-32 h-32 rounded-full border-4 border-gray-900 flex items-center justify-center mb-6 bg-pink-100 shadow-[4px_4px_0px_0px_rgba(17,24,39,1)]"
+          >
+            <i
+              data-lucide="sparkles"
+              class="w-16 h-16 text-pink-500 fill-pink-200"
+            ></i>
+          </div>
+          <h2 class="text-2xl font-black uppercase mb-1">El Don</h2>
+          <h3
+            class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4"
+          >
+            El hallazgo
+          </h3>
+          <div
+            class="relative bg-gray-100 border-2 border-gray-900 rounded-xl p-4 mt-auto"
+          >
+            <div class="speech-bubble-triangle"></div>
+            <div class="speech-bubble-triangle-inner"></div>
+            <p class="font-medium text-gray-700 italic">
+              "Esa chispa única. Aquello que se me da bien de forma natural y
+              que puedo ofrecer al mundo."
+            </p>
+          </div>
+        </div>
+
+        <!-- Etapa 6 -->
+        <div
+          class="panel-card relative flex flex-col items-center text-center p-8 border-4 border-gray-900 rounded-2xl bg-white neo-shadow transition-all duration-300"
+        >
+          <div
+            class="absolute -top-4 -left-4 w-10 h-10 bg-yellow-400 border-4 border-gray-900 rounded-full flex items-center justify-center font-black text-xl z-10"
+          >
+            6
+          </div>
+          <div
+            class="w-32 h-32 rounded-full border-4 border-gray-900 flex items-center justify-center mb-6 bg-indigo-100 shadow-[4px_4px_0px_0px_rgba(17,24,39,1)]"
+          >
+            <i data-lucide="telescope" class="w-16 h-16 text-indigo-600"></i>
+          </div>
+          <h2 class="text-2xl font-black uppercase mb-1">Futuro</h2>
+          <h3
+            class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4"
+          >
+            Trazando la ruta
+          </h3>
+          <div
+            class="relative bg-gray-100 border-2 border-gray-900 rounded-xl p-4 mt-auto"
+          >
+            <div class="speech-bubble-triangle"></div>
+            <div class="speech-bubble-triangle-inner"></div>
+            <p class="font-medium text-gray-700 italic">
+              "Con todo lo aprendido, visualizo mi horizonte. Ya no hay niebla,
+              hay un camino claro."
+            </p>
+          </div>
+        </div>
+
+        <!-- Etapa 7 -->
+        <div
+          class="panel-card md:col-span-2 lg:col-span-3 relative flex flex-col items-center text-center p-8 border-4 border-gray-900 rounded-2xl bg-white neo-shadow transition-all duration-300"
+        >
+          <div
+            class="absolute -top-4 -left-4 w-10 h-10 bg-yellow-400 border-4 border-gray-900 rounded-full flex items-center justify-center font-black text-xl z-10"
+          >
+            7
+          </div>
+          <div
+            class="w-32 h-32 rounded-full border-4 border-gray-900 flex items-center justify-center mb-6 bg-green-100 shadow-[4px_4px_0px_0px_rgba(17,24,39,1)]"
+          >
+            <span class="text-8xl font-black text-gray-800">?</span>
+          </div>
+          <h2 class="text-3xl font-black uppercase mb-1">¿Y ahora qué?</h2>
+          <h3
+            class="text-sm font-bold text-gray-400 uppercase tracking-widest mb-4"
+          >
+            El próximo gran paso
+          </h3>
+          <div
+            class="relative bg-gray-100 border-2 border-gray-900 rounded-xl p-6 mt-auto max-w-2xl"
+          >
+            <div class="speech-bubble-triangle"></div>
+            <div class="speech-bubble-triangle-inner"></div>
+            <p class="text-lg font-bold text-gray-700 italic">
+              "El lienzo está en blanco. La verdadera aventura está a punto de
+              comenzar."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pie -->
+      <div
+        class="mt-12 text-center text-gray-400 font-black uppercase tracking-[0.2em] text-sm italic"
+      >
+        Continuará...
+      </div>
+    </div>
+
+    <script>
+      // Inicializar iconos de Lucide
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
